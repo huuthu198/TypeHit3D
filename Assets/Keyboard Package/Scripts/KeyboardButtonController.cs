@@ -32,7 +32,7 @@ public class KeyboardButtonController : MonoBehaviour
             GameManager.Instance.AddLetter(containerText.text);
         } else {
             Debug.Log(containerText.text + " is pressed");
-            GameController.instance.SpawnLatter();
+            GameController.instance.SpawnLatter(containerText.text);
         }
     }
 
