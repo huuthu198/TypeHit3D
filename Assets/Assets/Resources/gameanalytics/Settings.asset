@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cced7019a5f5d9570f88fdc17461e50, type: 3}
+  m_Name: Settings
+  m_EditorClassIdentifier:
+  TotalMessagesSubmitted: 0
+  TotalMessagesFailed: 0
+  DesignMessagesSubmitted: 0
+  DesignMessagesFailed: 0
+  QualityMessagesSubmitted: 0
+  QualityMessagesFailed: 0
+  ErrorMessagesSubmitted: 0
+  ErrorMessagesFailed: 0
+  BusinessMessagesSubmitted: 0
+  BusinessMessagesFailed: 0
+  UserMessagesSubmitted: 0
+  UserMessagesFailed: 0
+  CustomArea:
+  gameKey:
+  - dbdd7b82b5110c80fee99d2a5812c58c
+  - e2c86d5015852d5c90099641453a3ac8
+  secretKey:
+  - b95c59a2573a0b639d4ddac8a53e73cd622a5745
+  - 9b6bb240ef5e7617303407afc4cc6647e13fb32e
+  Build:
+  - 1.0.0
+  - 1.0.0
+  SelectedPlatformOrganization:
+  - HyperCasualStudio
+  - HyperCasualStudio
+  SelectedPlatformStudio:
+  - CPI_Test
+  - CPI_Test
+  SelectedPlatformGame:
+  - Android_develop_creative
+  - Ice cream Life
+  SelectedPlatformGameID: 5d870200ac970200
+  SelectedOrganization: 0200000002000000
+  SelectedStudio: 0200000002000000
+  SelectedGame: 0100000002000000
+  NewVersion:
+  Changes:
+  SignUpOpen: 0
+  StudioName:
+  GameName:
+  OrganizationName:
+  OrganizationIdentifier:
+  EmailGA: developers.hypercasual@gmail.com
+  IntroScreen: 0
+  InfoLogEditor: 1
+  InfoLogBuild: 1
+  VerboseLogBuild: 0
+  UseManualSessionHandling: 0
+  SendExampleGameDataToMyGame: 0
+  InternetConnectivity: 0
+  CustomDimensions01:
+  - dev
+  - devCtrl
+  - stg
+  - prd
+  - prdCtrl
+  - testA
+  - testB
+  - testC
+  - testD
+  - testE
+  - testF
+  - testG
+  - testH
+  - testI
+  - testJ
+  - testK
+  - testL
+  - testM
+  - testN
+  - testO
+  CustomDimensions02:
+  - dev
+  - devCtrl
+  - stg
+  - prd
+  - prdCtrl
+  - testA
+  - testB
+  - testC
+  - testD
+  - testE
+  - testF
+  - testG
+  - testH
+  - testI
+  - testJ
+  - testK
+  - testL
+  - testM
+  - testN
+  - testO
+  CustomDimensions03: []
+  ResourceItemTypes: []
+  ResourceCurrencies: []
+  LastCreatedGamePlatform: 0
+  Platforms: 0b00000008000000
+  CurrentInspectorState: 1
+  ClosedHints:
+  DisplayHints: 0
+  DisplayHintsScrollState: {x: 0, y: 0}
+  Logo: {fileID: 2800000, guid: 983f38aa69824864e9904111a490e9d3, type: 3}
+  UpdateIcon: {fileID: 2800000, guid: 7a232712402a5a445b67c2a4843d2c4b, type: 3}
+  InfoIcon: {fileID: 2800000, guid: 69280444e6f5ea64d97da6245036ea71, type: 3}
+  DeleteIcon: {fileID: 2800000, guid: 84866e19017a19c4f940b9d2811834d7, type: 3}
+  GameIcon: {fileID: 2800000, guid: 68f6c7c1344bd63409728e5b7fd1994d, type: 3}
+  HomeIcon: {fileID: 2800000, guid: 515972d28313d0c4f80d05b84aa654e5, type: 3}
+  InstrumentIcon: {fileID: 2800000, guid: 3d920a14f00b9c54abeb1077fde3f6dc, type: 3}
+  QuestionIcon: {fileID: 2800000, guid: ac323210971d51b4d9dda3c0d2ac3bae, type: 3}
+  UserIcon: {fileID: 2800000, guid: 297b3708324fb944e9d2b00cda9b6b25, type: 3}
+  AmazonIcon: {fileID: 0}
+  GooglePlayIcon: {fileID: 0}
+  iosIcon: {fileID: 0}
+  macIcon: {fileID: 0}
+  windowsPhoneIcon: {fileID: 0}
+  UsePlayerSettingsBuildNumber: 1
+  SubmitErrors: 1
+  NativeErrorReporting: 1
+  MaxErrorCount: 10
+  SubmitFpsAverage: 0
+  SubmitFpsCritical: 0
+  IncludeGooglePlay: 1
+  FpsCriticalThreshold: 20
+  FpsCirticalSubmitInterval: 1
+  PlatformFoldOut: 0101
+  CustomDimensions01FoldOut: 1
+  CustomDimensions02FoldOut: 1
+  CustomDimensions03FoldOut: 0
+  ResourceItemTypesFoldOut: 0
+  ResourceCurrenciesFoldOut: 0

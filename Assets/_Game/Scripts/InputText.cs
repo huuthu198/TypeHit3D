@@ -9,10 +9,4 @@ public class InputText : MonoBehaviour
     {
        sprite.DOFade(0f, 0.2f).SetLoops(-1,LoopType.Yoyo);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

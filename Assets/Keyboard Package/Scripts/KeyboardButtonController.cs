@@ -11,6 +11,7 @@ public class KeyboardButtonController : MonoBehaviour
     [SerializeField] Image containerIcon;
     [SerializeField] TextMeshProUGUI containerText;
     [SerializeField] TextMeshProUGUI containerActionText;
+    public AlphabetType alphabetType;
 
     private void Start() {
         SetContainerBorderColor(ColorDataStore.GetKeyboardBorderColor());
@@ -32,7 +33,8 @@ public class KeyboardButtonController : MonoBehaviour
             GameManager.Instance.AddLetter(containerText.text);
         } else {
             Debug.Log(containerText.text + " is pressed");
-            GameController.instance.SpawnLatter(containerText.text);
+            GameController.instance.alphabetType = alphabetType;
+            GameController.instance.SpawnLatter();
         }
     }
 
