@@ -9,7 +9,7 @@ public class Bot : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Alphabet"))
         {
-            winCanvas.gameObject.SetActive(true);
+            UIManager.Ins.OpenUI<Win>();
             Time.timeScale = 1.0f;
         }
     }
