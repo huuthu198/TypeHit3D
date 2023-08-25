@@ -34,7 +34,7 @@ public class KeyboardButtonController : MonoBehaviour
         } else {
             Debug.Log(containerText.text + " is pressed");
             GameController.Ins.alphabetType = alphabetType;
-            GameController.Ins.SpawnLatter();
+            GameController.Ins.SpawnLetter();
         }
     }
 

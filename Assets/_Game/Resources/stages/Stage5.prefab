@@ -4310,7 +4310,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d740083fde5d5c408cb328b2848eb04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winCanvas: {fileID: 0}
 --- !u!1 &1759603671847167
 GameObject:
   m_ObjectHideFlags: 0
@@ -5691,7 +5690,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8187356043864813857, guid: 1aefdf817cd35984a8d73e24a6e31b54, type: 3}
       propertyPath: m_Name
-      value: InputText
+      value: SpawnText
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1aefdf817cd35984a8d73e24a6e31b54, type: 3}
@@ -5713,11 +5712,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5943232897321307617, guid: 5e7f4762713d1d34387a582f395cfd26, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.65
       objectReference: {fileID: 0}
     - target: {fileID: 5943232897321307617, guid: 5e7f4762713d1d34387a582f395cfd26, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 4.02
       objectReference: {fileID: 0}
     - target: {fileID: 5943232897321307617, guid: 5e7f4762713d1d34387a582f395cfd26, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5755,6 +5754,14 @@ PrefabInstance:
       propertyPath: inputText
       value: 
       objectReference: {fileID: 8801049020867787518}
+    - target: {fileID: 5943232897321307622, guid: 5e7f4762713d1d34387a582f395cfd26, type: 3}
+      propertyPath: spawnText.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5943232897321307622, guid: 5e7f4762713d1d34387a582f395cfd26, type: 3}
+      propertyPath: spawnText.Array.data[0]
+      value: 
+      objectReference: {fileID: 7466433336130714724}
     - target: {fileID: 5943232897321307623, guid: 5e7f4762713d1d34387a582f395cfd26, type: 3}
       propertyPath: m_Name
       value: GameController

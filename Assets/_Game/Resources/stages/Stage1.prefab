@@ -2415,7 +2415,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d740083fde5d5c408cb328b2848eb04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winCanvas: {fileID: 0}
 --- !u!1 &1999028174747853
 GameObject:
   m_ObjectHideFlags: 0
@@ -2579,7 +2578,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8187356043864813857, guid: 1aefdf817cd35984a8d73e24a6e31b54, type: 3}
       propertyPath: m_Name
-      value: InputText
+      value: SpawnText
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1aefdf817cd35984a8d73e24a6e31b54, type: 3}
