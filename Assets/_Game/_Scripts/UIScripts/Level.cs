@@ -1,12 +1,14 @@
+using API.UI;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Level : UICanvas
+public class Level : BaseUIMenu
 {
     public static Level Ins;
     [SerializeField] RectTransform container;
     [SerializeField] GameObject buttonPrefab;
+
     private void Awake()
     {
         Ins = this;
@@ -25,8 +27,8 @@ public class Level : UICanvas
     }
     public void Btn()
     {
-        UIManager.Ins.OpenUI<GamePlay>();
-        gameObject.SetActive(false);
+        CanvasManager.Ins.OpenUI(UIName.GameplayUI, null);
+        Close();
     }
    
 }

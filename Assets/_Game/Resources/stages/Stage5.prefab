@@ -5762,6 +5762,14 @@ PrefabInstance:
       propertyPath: spawnText.Array.data[0]
       value: 
       objectReference: {fileID: 7466433336130714724}
+    - target: {fileID: 5943232897321307622, guid: 5e7f4762713d1d34387a582f395cfd26, type: 3}
+      propertyPath: spawnPositions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5943232897321307622, guid: 5e7f4762713d1d34387a582f395cfd26, type: 3}
+      propertyPath: spawnPositions.Array.data[0]
+      value: 
+      objectReference: {fileID: 8801049020867787518}
     - target: {fileID: 5943232897321307623, guid: 5e7f4762713d1d34387a582f395cfd26, type: 3}
       propertyPath: m_Name
       value: GameController

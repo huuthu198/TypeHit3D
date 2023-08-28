@@ -1,15 +1,16 @@
+using API.UI;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Lose : UICanvas
+public class Lose : BaseUIMenu
 {
     public Text score;
 
     public void MainMenuButton()
     {
-        UIManager.Ins.OpenUI<MainMenu>();
-        Close(0);
+        CanvasManager.Ins.OpenUI(UIName.MainMenuUI, null);
+        Close();
     }
 }

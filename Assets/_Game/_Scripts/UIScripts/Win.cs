@@ -1,3 +1,4 @@
+using API.UI;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,16 +6,19 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
-public class Win : UICanvas
+public class Win : BaseUIMenu
 {
-    //public Text score;
+    [SerializeField] Button nextBtn;
 
-    public void MainMenuButton()
+    private void Start()
+    {
+        nextBtn.onClick.AddListener(NextBtn);
+    }
+    public void NextBtn()
     {
         PlayerPrefs.SetInt("idMap", PlayerPrefs.GetInt("idMap")+1);
        
         SceneManager.LoadScene(0);
     }
-
 
 }

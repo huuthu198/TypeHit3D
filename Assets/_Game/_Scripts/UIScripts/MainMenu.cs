@@ -1,12 +1,20 @@
+using API.UI;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class MainMenu : UICanvas
+public class MainMenu : BaseUIMenu
 {
+    [SerializeField] Button playBtn;
+    private void Start()
+    {
+        playBtn.onClick.AddListener(PlayButton);
+    }
     public void PlayButton()
     {
-        UIManager.Ins.OpenUI<GamePlay>();
-        Close(0);
+        CanvasManager.Ins.OpenUI(UIName.GameplayUI, null);
+        
+        Close();
     }
 }

@@ -78,6 +78,11 @@
     <Compile Include="Assets\_Game\_Scripts\LetterManager.cs" />
     <Compile Include="Assets\_Game\_Scripts\UIScripts\MainMenu.cs" />
     <Compile Include="Assets\_Game\_Scripts\UIScripts\Win.cs" />
+    <Compile Include="Assets\_API_UI\UI\Scripts\BaseUIComp.cs" />
+    <Compile Include="Assets\_API_UI\UI\Scripts\BaseUIMenu.cs" />
+    <Compile Include="Assets\_API_UI\UI\Scripts\CanvasManager.cs" />
+    <Compile Include="Assets\_API_UI\UI\Scripts\UIName.cs" />
+    <Compile Include="Assets\_Game\_Scripts\AppParent.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\_Game\TextMesh Pro\Shaders\TMPro.cginc" />

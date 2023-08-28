@@ -21,7 +21,7 @@ public class UIManager : Singleton<UIManager>
     //mo UI canvas
     private void Awake()
     {
-        UIManager.Ins.OpenUI<LoadingUI>();
+        //UIManager.Ins.OpenUI<LoadingUI>();
     }
     public T OpenUI<T>() where T : UICanvas
     {

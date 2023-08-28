@@ -8,7 +8,7 @@ public class SpawnText : MonoBehaviour
    
     void Start()
     {
-       sprite.DOFade(0f, 0.2f).SetLoops(-1,LoopType.Yoyo);
+       sprite.DOFade(0f, 0.5f).SetLoops(-1,LoopType.Yoyo);
     }
 
 }

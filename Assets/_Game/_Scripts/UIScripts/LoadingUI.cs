@@ -1,10 +1,10 @@
+using API.UI;
 using DG.Tweening;
 using System;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class LoadingUI : UICanvas
+public class LoadingUI : BaseUIMenu
 {
     public Image progress;
 
@@ -18,7 +18,7 @@ public class LoadingUI : UICanvas
         progress.fillAmount = 0;
         progress.DOFillAmount(1f, 3f).SetEase(Ease.Linear).OnComplete(() =>
         {
-            UIManager.Ins.OpenUI<GamePlay>();
+            CanvasManager.Ins.OpenUI(UIName.GameplayUI, null);
             gameObject.SetActive(false);
         });
     }

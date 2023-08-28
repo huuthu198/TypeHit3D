@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class LevelManager : Singleton<LevelManager>
 {
     public int AllLevelCount = 5;
-    [SerializeField] int id =0;
+    [SerializeField] int id;
     public Button[] button;
     // Start is called before the first frame update
     void Start()
@@ -21,4 +21,5 @@ public class LevelManager : Singleton<LevelManager>
     {
         GameObject map = LeanPool.Spawn(Resources.Load<GameObject>("stages/Stage" + PlayerPrefs.GetInt("idMap")), new Vector3(0f, 1.5f, 0f), Quaternion.identity, this.transform);
     }
+
 }
