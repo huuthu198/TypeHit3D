@@ -12,8 +12,8 @@ public class AppParent : Singleton<AppParent>
 
         Action onLoaded = () =>
         {
-            //CanvasManager.Ins.CloseUI(UIName.LoadingUI);
-            CanvasManager.Ins.OpenUI(UIName.GameplayUI, null);
+            
+            CanvasManager.Ins.OpenUI(UIName.MainMenuUI, null);
         };
         CanvasManager.Ins.OpenUI(UIName.LoadingUI, new object[] { onLoaded });
     }

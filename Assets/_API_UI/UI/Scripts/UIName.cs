@@ -10,4 +10,5 @@ public class UIName : MonoBehaviour
     public const string LoseUI = "LoseUI";
     public const string WinUI = "WinUI";
     public const string MainMenuUI = "MainMenuUI";
+    public const string SettingUI = "SettingUI";
 }

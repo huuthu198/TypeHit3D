@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class UIManager : Singleton<UIManager>
 {
     private Dictionary<System.Type, UICanvas> uiCanvasPrefab = new Dictionary<System.Type, UICanvas>();
-    public int id;
+    
     private UICanvas[] uiResources;
     //dict luu cac ui dang dung
     private Dictionary<System.Type, UICanvas> uiCanvas = new Dictionary<System.Type, UICanvas>();
@@ -14,7 +14,7 @@ public class UIManager : Singleton<UIManager>
     //canvas chua dung cac canvas con, nen la mot canvas - root de chua cac canvas nay
     public Transform CanvasParentTF;
     public Level level;
-
+    public int id;
     #region Canvas
 
     //open UI

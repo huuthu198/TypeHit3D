@@ -150,7 +150,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2975191188590109541}
-  - component: {fileID: 7085890298251790974}
+  - component: {fileID: 1357214086044800932}
   m_Layer: 5
   m_Name: WinUI
   m_TagString: Untagged
@@ -179,7 +179,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &7085890298251790974
+--- !u!114 &1357214086044800932
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -191,7 +191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a55cad158e28ce439befc8b30030b14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UILayer: 0
+  UILayer: 2
   UIID: 
   nextBtn: {fileID: 8226560074425994788}
 --- !u!1 &3607876859993885483
@@ -312,7 +312,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 29}
+  m_AnchoredPosition: {x: 0, y: -6.7106895}
   m_SizeDelta: {x: 320, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5754938609030087109

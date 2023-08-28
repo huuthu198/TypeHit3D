@@ -11,10 +11,10 @@ public class GamePlay : BaseUIMenu
 
     private void Start()
     {
-        settingBtn.onClick.AddListener(SettingButton);
+        settingBtn.onClick.AddListener(SettingBtn);
     }
 
-    public void SettingButton()
+    public void SettingBtn()
     {
         CanvasManager.Ins.OpenUI(UIName.LevelUI, null);
         Close();

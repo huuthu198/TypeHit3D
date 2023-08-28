@@ -16,9 +16,9 @@ public class LoadingUI : BaseUIMenu
     {
         Time.timeScale = 1f;
         progress.fillAmount = 0;
-        progress.DOFillAmount(1f, 3f).SetEase(Ease.Linear).OnComplete(() =>
+        progress.DOFillAmount(1f, 1f).SetEase(Ease.Linear).OnComplete(() =>
         {
-            CanvasManager.Ins.OpenUI(UIName.GameplayUI, null);
+            CanvasManager.Ins.OpenUI(UIName.MainMenuUI, null);
             gameObject.SetActive(false);
         });
     }

@@ -19,6 +19,7 @@ namespace API.UI
         /// <summary>
         /// UIs that currently opened
         /// </summary>
+     
         private List<List<BaseUIMenu>> OpenedUI = new List<List<BaseUIMenu>>();
 
         private List<Transform> UILayerParents = new List<Transform>();

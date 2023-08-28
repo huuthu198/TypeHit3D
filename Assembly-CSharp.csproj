@@ -57,32 +57,32 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\_Game\_Scripts\UIScripts\Lose.cs" />
+    <Compile Include="Assets\_API_UI\UI\Scripts\UIName.cs" />
     <Compile Include="Assets\_Game\_Scripts\SpawnText.cs" />
     <Compile Include="Assets\_Game\_Scripts\UIScripts\LoadingUI.cs" />
     <Compile Include="Assets\_Game\_Scripts\UIScripts\UICanvas.cs" />
+    <Compile Include="Assets\_API_UI\UI\Scripts\CanvasManager.cs" />
     <Compile Include="Assets\_Game\_Scripts\ButtonData.cs" />
+    <Compile Include="Assets\_Game\_Scripts\AppParent.cs" />
     <Compile Include="Assets\_Game\_Scripts\UIScripts\Singleton.cs" />
     <Compile Include="Assets\_Game\_Scripts\UIScripts\GamePlay.cs" />
     <Compile Include="Assets\_Game\_Scripts\UIScripts\Level.cs" />
     <Compile Include="Assets\_Game\_Scripts\Bot.cs" />
     <Compile Include="Assets\_Game\_Scripts\LevelManager.cs" />
-    <Compile Include="Assets\_Game\_Scripts\UIScripts\Setting.cs" />
+    <Compile Include="Assets\_Game\_Scripts\UIScripts\SettingUI.cs" />
     <Compile Include="Assets\_Game\_Scripts\GameController.cs" />
     <Compile Include="Assets\Keyboard Package\Scripts\GameManager.cs" />
-    <Compile Include="Assets\_Game\_Scripts\UIScripts\CanvasBlockRaycast.cs" />
     <Compile Include="Assets\Autosave.cs" />
+    <Compile Include="Assets\_API_UI\UI\Scripts\BaseUIMenu.cs" />
     <Compile Include="Assets\Keyboard Package\Scripts\ColorDataStore.cs" />
+    <Compile Include="Assets\_API_UI\UI\Scripts\BaseUIComp.cs" />
     <Compile Include="Assets\_Game\_Scripts\UIScripts\UIManager.cs" />
     <Compile Include="Assets\Keyboard Package\Scripts\KeyboardController.cs" />
     <Compile Include="Assets\Keyboard Package\Scripts\KeyboardButtonController.cs" />
     <Compile Include="Assets\_Game\_Scripts\LetterManager.cs" />
-    <Compile Include="Assets\_Game\_Scripts\UIScripts\MainMenu.cs" />
-    <Compile Include="Assets\_Game\_Scripts\UIScripts\Win.cs" />
-    <Compile Include="Assets\_API_UI\UI\Scripts\BaseUIComp.cs" />
-    <Compile Include="Assets\_API_UI\UI\Scripts\BaseUIMenu.cs" />
-    <Compile Include="Assets\_API_UI\UI\Scripts\CanvasManager.cs" />
-    <Compile Include="Assets\_API_UI\UI\Scripts\UIName.cs" />
-    <Compile Include="Assets\_Game\_Scripts\AppParent.cs" />
+    <Compile Include="Assets\_Game\_Scripts\UIScripts\MainMenuUI.cs" />
+    <Compile Include="Assets\_Game\_Scripts\UIScripts\WinUI.cs" />
+    <Compile Include="Assets\_Game\_Scripts\BotManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\_Game\TextMesh Pro\Shaders\TMPro.cginc" />

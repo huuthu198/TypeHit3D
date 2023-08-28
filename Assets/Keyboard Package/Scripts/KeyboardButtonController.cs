@@ -33,7 +33,8 @@ public class KeyboardButtonController : MonoBehaviour
             GameManager.Instance.AddLetter(containerText.text);
         } else {
             Debug.Log(containerText.text + " is pressed");
-            GameController.Ins.alphabetType = alphabetType;
+            GameController.Ins.alphabetTypes.Add(alphabetType);
+            //Check if list
             GameController.Ins.SpawnLetter();
         }
     }
@@ -43,6 +44,8 @@ public class KeyboardButtonController : MonoBehaviour
             GameManager.Instance.DeleteLetter();
         } else {
             Debug.Log("Last char deleted");
+            if(GameController.Ins.alphabetTypes.Count > 0)
+                GameController.Ins.alphabetTypes.RemoveAt(GameController.Ins.alphabetTypes.Count - 1);
         }
     }
     public void SubmitWord() {

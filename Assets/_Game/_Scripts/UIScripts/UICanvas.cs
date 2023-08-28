@@ -7,7 +7,7 @@ public class UICanvas : MonoBehaviour
     //public bool IsAvoidBackKey = false;
     public bool IsDestroyOnClose = false;
 
-    protected RectTransform m_RectTransform;
+   /* protected RectTransform m_RectTransform;
     private Animator m_Animator;
     private float m_OffsetY = 0;
 
@@ -35,9 +35,7 @@ public class UICanvas : MonoBehaviour
             m_RectTransform.offsetMin = leftBottom;
             m_OffsetY = 100f;
         }
-    }
-
-    //Setup canvas to avoid flash UI
+    }*/
     //set up mac dinh cho UI de tranh truong hop bi nhay' hinh
     public virtual void Setup()
     {

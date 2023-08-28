@@ -1,45 +1,28 @@
-﻿using System.Collections;
+﻿using Lean.Pool;
 using System.Collections.Generic;
 using UnityEngine;
-using Lean.Pool;
-using TMPro;
-using UnityEngine.Rendering.VirtualTexturing;
 
 public class GameController : Singleton<GameController>
 {
     public List<Transform> spawnPositions = new List<Transform>();
     public List<GameObject> listAlphabet = new List<GameObject>();
-    public AlphabetType alphabetType;
-    private  int currentInput = 0;
+    public List<AlphabetType> alphabetTypes;
 
- 
     public void SpawnLetter()
     {
-        for (int i = 0; i < listAlphabet.Count; i++)
+        if (spawnPositions.Count == alphabetTypes.Count)
         {
-            if (listAlphabet[i].GetComponent<LetterManager>().alphabet == alphabetType)
+            for (int i = 0; i < spawnPositions.Count; i++)
             {
-                var letter = LeanPool.Spawn(listAlphabet[i]);
-
-                if (i < spawnPositions.Count)
-                {
-                    Transform specificSpawnPosition = spawnPositions[i];
-                    letter.transform.position = specificSpawnPosition.position;
-                }
-                else
-                {
-                    Debug.LogWarning("Not enough spawn positions defined for all letters.");
-                }
-
-                currentInput++;
+                LeanPool.Spawn(listAlphabet[(int)alphabetTypes[i]], spawnPositions[i].position, listAlphabet[(int)alphabetTypes[i]].transform.rotation);
             }
         }
     }
 }
 
 public enum AlphabetType
-  {
-    q,w,e,r,t,y,u,i,o,p,a,s,d,f,g,h,j,k,l,z,x,c,v,b,n,m
-  }
+{
+    q, w, e, r, t, y, u, i, o, p, a, s, d, f, g, h, j, k, l, z, x, c, v, b, n, m
+}
 
 

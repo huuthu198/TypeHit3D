@@ -5,21 +5,15 @@ using UnityEngine;
 
 public class Bot : MonoBehaviour
 {
-    private List<Bot> bots;
-    private int currentBot ;
-    void Init()
-    {
-        for(int i = 0; i <= bots.Count; i++)
-        {
-          
-        }
-    }
+    public bool IsHit = false;
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Alphabet"))
         {
-            CanvasManager.Ins.OpenUI(UIName.WinUI, null);
-            
+            IsHit = true;
+            BotManager.Ins.CheckBots();
+            //Destroy(collision.gameObject);
+            //StartCoroutine(OpenCanvasAfterDelay(1f));
         }
     }
 }

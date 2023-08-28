@@ -19,7 +19,8 @@ public class LevelManager : Singleton<LevelManager>
     }
     private void GetLevelPref()
     {
-        GameObject map = LeanPool.Spawn(Resources.Load<GameObject>("stages/Stage" + PlayerPrefs.GetInt("idMap")), new Vector3(0f, 1.5f, 0f), Quaternion.identity, this.transform);
+        // GameObject map = 
+        LeanPool.Spawn(Resources.Load<GameObject>("stages/Stage" + PlayerPrefs.GetInt("idMap")), new Vector3(0f, 1.5f, 0f), Quaternion.identity, this.transform);
     }
 
 }

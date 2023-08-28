@@ -745,6 +745,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d740083fde5d5c408cb328b2848eb04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsHit: 0
 --- !u!1 &1050547504592376
 GameObject:
   m_ObjectHideFlags: 0
@@ -1324,6 +1325,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4400752552001569}
+  - component: {fileID: 1371432999007725329}
   m_Layer: 0
   m_Name: Stage4
   m_TagString: Untagged
@@ -1353,6 +1355,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
+--- !u!114 &1371432999007725329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120757871485540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c125e3c06bd97944bc74d9e90ba67f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bots:
+  - {fileID: 8096034497041490905}
+  - {fileID: 6559587284102199159}
+  delayWinTime: 1
 --- !u!1 &1121294684113158
 GameObject:
   m_ObjectHideFlags: 0
@@ -4437,6 +4455,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d740083fde5d5c408cb328b2848eb04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  IsHit: 0
 --- !u!1 &1533558505407163
 GameObject:
   m_ObjectHideFlags: 0
