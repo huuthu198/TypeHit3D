@@ -12,8 +12,6 @@ public class Bot : MonoBehaviour
         {
             IsHit = true;
             BotManager.Ins.CheckBots();
-            //Destroy(collision.gameObject);
-            //StartCoroutine(OpenCanvasAfterDelay(1f));
         }
     }
 }

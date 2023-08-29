@@ -12,7 +12,6 @@ public class Level : BaseUIMenu
     private void Awake()
     {
         Ins = this;
-
         OnInit();
     }
 

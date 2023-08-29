@@ -13,8 +13,8 @@ public class MainMenuUI : BaseUIMenu
     }
     public void PlayButton()
     {
-        CanvasManager.Ins.OpenUI(UIName.GameplayUI, null);
-        
+        AppParent.Ins.isPlaying = true;
+        CanvasManager.Ins.OpenUI(UIName.LevelUI, null);
         Close();
     }
 }

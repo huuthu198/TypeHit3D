@@ -167,9 +167,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53cf6b2ee497eea46bf717fc3361c0b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AllLevelCount: 5
+  AllLevelCount: 7
   id: 1
-  button: []
 --- !u!1 &414599900
 GameObject:
   m_ObjectHideFlags: 0
@@ -313,6 +312,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c6a96beacd8f2243b6bcad762dc4d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  needDontDestroy: 1
+  isPlaying: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,4 +605,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1499ca553f02aa145aec97bd45f43242, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  level: {fileID: 0}
+  id: 0
   dontDestroyOnLoad: 0

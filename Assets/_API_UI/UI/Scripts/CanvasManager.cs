@@ -8,6 +8,8 @@ namespace API.UI
     public class CanvasManager : MonoBehaviour
     {
         public static CanvasManager Ins;
+        public Level level;
+        public int id;
         /// <summary>
         /// Set Canvas Manager To Don't Destroy On Load
         /// </summary>

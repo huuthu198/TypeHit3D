@@ -1,20 +1,38 @@
 ﻿using Lean.Pool;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GameController : Singleton<GameController>
 {
     public List<Transform> spawnPositions = new List<Transform>();
     public List<GameObject> listAlphabet = new List<GameObject>();
+    public List<GameObject> listAlphabeCurrent = new List<GameObject>();
     public List<AlphabetType> alphabetTypes;
+    public int count;
 
     public void SpawnLetter()
     {
-        if (spawnPositions.Count == alphabetTypes.Count)
+        //if (spawnPositions.Count == alphabetTypes.Count)
+        //{
+        //    for (int i = 0; i < spawnPositions.Count; i++)
+        //    {
+        //        LeanPool.Spawn(listAlphabet[(int)alphabetTypes[i]], spawnPositions[i].position, listAlphabet[(int)alphabetTypes[i]].transform.rotation);
+        //    }
+        //}
+        if (count < spawnPositions.Count)
         {
-            for (int i = 0; i < spawnPositions.Count; i++)
+            spawnPositions[count].gameObject.SetActive(false);
+            var a = LeanPool.Spawn(listAlphabet[(int)alphabetTypes[count]], spawnPositions[count].position, listAlphabet[(int)alphabetTypes[count]].transform.rotation,null);
+            listAlphabeCurrent.Add(a);
+            a.GetComponent<Rigidbody>().isKinematic = true;
+            count++;
+            if(count == spawnPositions.Count)
             {
-                LeanPool.Spawn(listAlphabet[(int)alphabetTypes[i]], spawnPositions[i].position, listAlphabet[(int)alphabetTypes[i]].transform.rotation);
+                foreach (var item in listAlphabeCurrent)
+                {
+                    item.GetComponent<Rigidbody>().isKinematic = false;
+                }
             }
         }
     }

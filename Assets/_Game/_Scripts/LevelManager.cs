@@ -1,26 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Lean.Pool;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
-
+using API.UI;
+using System.Collections;
 public class LevelManager : Singleton<LevelManager>
 {
-    public int AllLevelCount = 5;
+    public int AllLevelCount = 7;
     [SerializeField] int id;
-    public Button[] button;
-    // Start is called before the first frame update
+    GameObject map;
+    //public Button[] button;
+   
     void Start()
     {
-        UIManager.Ins.id = PlayerPrefs.GetInt("idMap");
-        PlayerPrefs.SetInt("idMap", UIManager.Ins.id);
+        CanvasManager.Ins.id = PlayerPrefs.GetInt("idMap");
+        PlayerPrefs.SetInt("idMap", CanvasManager.Ins.id);
         GetLevelPref();
     }
-    private void GetLevelPref()
+    public void GetLevelPref()
     {
-        // GameObject map = 
         LeanPool.Spawn(Resources.Load<GameObject>("stages/Stage" + PlayerPrefs.GetInt("idMap")), new Vector3(0f, 1.5f, 0f), Quaternion.identity, this.transform);
+        
+        CanvasManager.Ins.OpenUI(UIName.GameplayUI, null);
     }
-
+  
 }
