@@ -5,12 +5,35 @@ using UnityEngine;
 
 public class Bot : MonoBehaviour
 {
+    Animator animator;
+
+    //
+    [SerializeField] bool pressMe;
+    //
+
     public bool IsHit = false;
-    private void OnCollisionEnter(Collision collision)
+
+    void Awake() => animator = GetComponent<Animator>();
+
+    void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Alphabet"))
+        if (collision.gameObject.CompareTag("Alphabet") && !IsHit)
         {
             IsHit = true;
+            //------------------------------
+            if (!pressMe)
+            //------------------------------
+
+
+                animator.Play("Die", 0, 0.25f);
+
+
+            //------------------------------
+            else
+                animator.Play("Die", 0, 1f);
+            //------------------------------
+
+
             BotManager.Ins.CheckBots();
         }
     }
