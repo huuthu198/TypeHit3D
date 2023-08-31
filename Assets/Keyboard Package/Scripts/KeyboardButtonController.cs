@@ -44,8 +44,8 @@ public class KeyboardButtonController : MonoBehaviour
             GameManager.Instance.DeleteLetter();
         } else {
             Debug.Log("Last char deleted");
-            if(GameController.Ins.alphabetTypes.Count > 0)
-                GameController.Ins.alphabetTypes.RemoveAt(GameController.Ins.alphabetTypes.Count - 1);
+            if(GameController.Ins.spawnPositions.Count > 0)
+                GameController.Ins.spawnPositions.RemoveAt(GameController.Ins.spawnPositions.Count - 1);
         }
     }
     public void SubmitWord() {

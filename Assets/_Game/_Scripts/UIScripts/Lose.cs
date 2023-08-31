@@ -8,9 +8,8 @@ public class Lose : BaseUIMenu
 {
     public Text score;
 
-    public void MainMenuButton()
+   public void ReplayBtn()
     {
-        CanvasManager.Ins.OpenUI(UIName.MainMenuUI, null);
-        Close();
+        CanvasManager.Ins.OpenUI(UIName.GameplayUI, null);
     }
 }

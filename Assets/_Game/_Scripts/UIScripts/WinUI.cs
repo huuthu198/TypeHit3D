@@ -16,6 +16,6 @@ public class WinUI : BaseUIMenu
     {
         PlayerPrefs.SetInt("idMap", PlayerPrefs.GetInt("idMap")+1);
         SceneManager.LoadScene(0);
-        //LevelManager.Ins.;
+       
     }
 }

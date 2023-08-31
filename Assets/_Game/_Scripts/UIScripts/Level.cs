@@ -14,7 +14,6 @@ public class Level : BaseUIMenu
         Ins = this;
         OnInit();
     }
-
     void OnInit()
     {
         for (int i = 1; i <= LevelManager.Ins.AllLevelCount; i++)

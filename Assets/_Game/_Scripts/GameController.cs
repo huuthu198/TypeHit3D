@@ -13,13 +13,28 @@ public class GameController : Singleton<GameController>
 
     public void SpawnLetter()
     {
-        //if (spawnPositions.Count == alphabetTypes.Count)
-        //{
-        //    for (int i = 0; i < spawnPositions.Count; i++)
-        //    {
-        //        LeanPool.Spawn(listAlphabet[(int)alphabetTypes[i]], spawnPositions[i].position, listAlphabet[(int)alphabetTypes[i]].transform.rotation);
-        //    }
-        //}
+      for(int i = 0; i < listAlphabet.Count; i++) 
+        {
+            for (int j = 0; j < spawnPositions.Count; j++)
+            {
+                
+            }    
+        }
+        //--------------//
+
+       /* if (listAlphabet[i].GetComponent<LetterManager>().alphabet == alphabetType)
+        {
+            var letter = LeanPool.Spawn(listAlphabet[i]);
+            letter.transform.position = spawnText[currentInput].position;
+
+            if (i < spawnPositions.Count)
+            {
+                Transform specificSpawnPosition = spawnPositions[i];
+                letter.transform.position = specificSpawnPosition.position;
+            }
+            
+        }*/
+
         if (count < spawnPositions.Count)
         {
             spawnPositions[count].gameObject.SetActive(false);
