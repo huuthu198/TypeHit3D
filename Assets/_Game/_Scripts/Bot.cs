@@ -24,15 +24,12 @@ public class Bot : MonoBehaviour
             if (!pressMe)
             //------------------------------
 
-
                 animator.Play("Die", 0, 0.25f);
-
 
             //------------------------------
             else
                 animator.Play("Die", 0, 1f);
             //------------------------------
-
 
             BotManager.Ins.CheckBots();
         }
