@@ -4,11 +4,9 @@ using API.UI;
 using System.Collections;
 public class LevelManager : Singleton<LevelManager>
 {
-    public int AllLevelCount = 7;
+    public int AllLevelCount = 10;
     [SerializeField] int id;
     GameObject map;
-    //public Button[] button;
-   
     void Start()
     {
         CanvasManager.Ins.id = PlayerPrefs.GetInt("idMap");

@@ -11,67 +11,38 @@ public class GameController : Singleton<GameController>
     public List<GameObject> listAlphabeCurrent = new List<GameObject>();
     public List<AlphabetType> alphabetTypes;
     public int count;
-    private List<bool> spawnPositionsUsed = new List<bool>();
-
-    //public void SpawnLetter()
-    //{
-    //    if (count <= spawnPositions.Count)
-    //    {
-    //        //spawnPositions[count].gameObject.SetActive(false);
-
-    //        var a = LeanPool.Spawn(listAlphabet[(int)alphabetTypes[count]], spawnPositions[count].position, listAlphabet[(int)alphabetTypes[count]].transform.rotation, null);
-    //        listAlphabeCurrent.Add(a);
-
-    //        a.GetComponent<Rigidbody>().isKinematic = true;
-    //        count++;
-
-    //        if (count == spawnPositions.Count)
-    //        {
-    //            foreach (var item in listAlphabeCurrent)
-    //            {
-    //                item.GetComponent<Rigidbody>().isKinematic = false;
-    //            }
-    //        }
-    //    }
-    //}
-    private void Start()
-    {
-
-        for (int i = 0; i < spawnPositions.Count; i++)
-        {
-            spawnPositionsUsed.Add(false);
-        }
-    }
-
+    
     public void SpawnLetter()
     {
-        
-            int PositionIndex = -1;
-            for (int i = 0; i < spawnPositionsUsed.Count; i++)
+        if (count < spawnPositions.Count && spawnPositions.Count > 1)
+        {
+            var a = LeanPool.Spawn(listAlphabet[(int)alphabetTypes[count]], spawnPositions[count].position, listAlphabet[(int)alphabetTypes[count]].transform.rotation, null);
+            listAlphabeCurrent.Add(a);
+
+            a.GetComponent<Rigidbody>().isKinematic = true;
+            count++;
+            if (count == spawnPositions.Count)
             {
-                if (!spawnPositionsUsed[i])
+                foreach (var item in listAlphabeCurrent)
                 {
-                    PositionIndex = i;
-                    break;
+                    item.GetComponent<Rigidbody>().isKinematic = false;
                 }
             }
-
-            // Nếu có vị trí spawn chưa được sử dụng, thực hiện spawn
-            if (PositionIndex != -1)
+        }
+        else
+        {
+            if (listAlphabeCurrent.Count > 0)
             {
-                var a = LeanPool.Spawn(listAlphabet[(int)alphabetTypes[count]], spawnPositions[PositionIndex].position, listAlphabet[(int)alphabetTypes[count]].transform.rotation, null);
-                listAlphabeCurrent.Add(a);
-
-                a.GetComponent<Rigidbody>().isKinematic = false;
-                count++;
+                var firstAlphabet = listAlphabeCurrent[0];
+                listAlphabeCurrent.RemoveAt(0);
+                firstAlphabet.GetComponent<Rigidbody>().isKinematic = true;
+                LeanPool.Despawn(firstAlphabet);
             }
-            else if (count == spawnPositions.Count)
-            {
-                foreach (var a in listAlphabeCurrent)
-                    a.GetComponent<Rigidbody>().isKinematic = true;
-            }
-        
-
+            var a = LeanPool.Spawn(listAlphabet[(int)alphabetTypes[count]], spawnPositions[0].position, listAlphabet[(int)alphabetTypes[count]].transform.rotation, null);
+            listAlphabeCurrent.Add(a);
+            a.GetComponent<Rigidbody>().isKinematic = false;
+            count++;
+        }
     }
 }
 public enum AlphabetType
